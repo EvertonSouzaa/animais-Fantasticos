@@ -1,26 +1,19 @@
-const listaAnimais = document.querySelector(".animais-lista");
-const animais = listaAnimais.offsetTop;
-const imgs = document.querySelectorAll("img");
-const img = document.querySelector("img");
+const tabMenu = document.querySelectorAll(".js-tabmenu  li");
+const tabContent = document.querySelectorAll(".js-tabcontent section");
 
-let i = 0;
+if (tabMenu.length && tabContent.length) {
+  tabContent[0].classList.add("ativo");
 
-imgs.forEach((item, index, array) => {
-  // console.log(item);
-});
-
-const linkExterno = document.querySelector('a[href^="http"]');
-
-function handleLinkExterno(event) {
-  event.preventDefault();
-  console.log(this.getAttribute("href"));
-  console.log(event.currentTarget);
-}
-
-function handleKeyboard(event) {
-  if (event.key === "f") {
-    document.body.classList.toggle("azul");
+  function activeTab(index) {
+    tabContent.forEach((section) => {
+      section.classList.remove("ativo");
+    });
+    tabContent[index].classList.add("ativo");
   }
-}
 
-window.addEventListener("keydown", handleKeyboard);
+  tabMenu.forEach((itemMenu, index) => {
+    itemMenu.addEventListener("click", () => {
+      activeTab(index);
+    });
+  });
+}

@@ -1,5 +1,5 @@
 {
-  "name": "animaisfantasticos",
+  "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "site de monitoramento de animais",
   "main": "index.js",
@@ -7,7 +7,6 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production"
   },
-  "author": "Everton",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.3",

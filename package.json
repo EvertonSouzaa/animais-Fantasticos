@@ -2,10 +2,10 @@
   "name": "animais-fantasticos",
   "version": "1.0.0",
   "description": "site de monitoramento de animais",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack build --output public"
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
   },
   "author": "Everton",
   "license": "ISC",

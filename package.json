@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack  build --output public"
+    "build": "webpack build --output public"
   },
+  "author": "Everton",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.23.3",

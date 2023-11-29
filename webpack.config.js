@@ -4,6 +4,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./"),
     filename: "main.js",
+    build: "webpack build --output public",
   },
   module: {
     rules: [

@@ -2,9 +2,8 @@ const path = require("path");
 module.exports = {
   entry: "./js/script.js",
   output: {
-    path: path.resolve(__dirname, "./"),
+    path: path.resolve(__dirname, "public"),
     filename: "main.js",
-    build: "webpack build --output public",
   },
   module: {
     rules: [
